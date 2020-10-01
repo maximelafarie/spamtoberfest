@@ -1,0 +1,20 @@
+name: 'Spamtoberfest | Pull request spam checker'
+description: 'List, flag and close pull requests from spammers'
+author: 'Maxime Lafarie'
+branding:
+  icon: 'user-x'
+  color: 'gray-dark'
+categories: ['Spam', 'Hacktoberfest', 'PR checker', 'checker', 'Pull request']
+
+on: [pull_request]
+
+inputs:
+  action-type:
+    description: 'Type of action to do if spammer is in the blacklist. Possible values: flag | close'
+    default: 'flag'
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
