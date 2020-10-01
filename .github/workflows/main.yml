@@ -1,0 +1,30 @@
+# This is a basic test workflow that demonstrates how Spamtoberfest works
+
+name: Pull Request Spamtoberfest checker
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the main branch
+on:
+  pull_request:
+    types: [opened]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "triage"
+  triage:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Spamtoberfest
+        uses: maximelafarie/spamtoberfest@v1
+        with:
+          # Type of action to do if spammer is in the blacklist. Possible values: flag | close
+          action-type: close # default is flag
+          # The GITHUB_TOKEN secret
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
