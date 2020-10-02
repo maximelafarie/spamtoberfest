@@ -11,7 +11,6 @@ This project consists of two parts:
 
 You can either flag some suspicious PRs or directly close and flag them if the author is recorded into the spammers list (in addition, it will not be taken into account for the Hacktoberfest achievements).
 
-
 ## How to add somebody to the spammers list?
 1. Open an issue with the dedicated issue template and fill the required fields
 2. Somebody will take a look at your issue and will push it or not to the repo's blacklist
@@ -22,7 +21,7 @@ Any issue doesn't open a PR. We only direct-push to the repo to not "cheat" over
 **I would like to avoid that contributing to the list to preserve our projects and our time becomes a PR race.**
 
 ## And so what?
-We hope this list, when completed with some spammers that doesn't care that much about the wonderful open source world, will help some maintainers to waiste less time closing useless PRs opened by idiots that just want a t-shirt without carrying about what they contribute.
+We hope this list, when completed with some spammers who don't care that much about the wonderful open source world, will help some maintainers to waste less time closing useless PRs opened by idiots that just want a t-shirt without caring about what they contribute.
 
 ## Add the Spamtoberfest Action to your repository
 In order to use the Action, you need to add a `workflow` to your project.
