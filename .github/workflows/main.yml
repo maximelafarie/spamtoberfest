@@ -22,7 +22,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Spamtoberfest
-        uses: maximelafarie/spamtoberfest@v1
+        uses: maximelafarie/spamtoberfest@main
         with:
           # Type of action to do if spammer is in the blacklist. Possible values: flag | close
           action-type: close # default is flag
