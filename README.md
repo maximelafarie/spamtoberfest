@@ -78,7 +78,7 @@ Starts the app in production by first building the project with `npm run build`,
 #### Automatic labelling
 <div>
     <img width="49%" src="assets/action-label-added.png" />
-    <img width="49%" src="assets/spam-closed.png" />
+    <img width="49%" src="assets/spam-label.png" />
 </div>
 
 #### Automatic closing
