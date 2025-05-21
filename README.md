@@ -13,7 +13,7 @@ You can either flag some suspicious PRs or directly close and flag them if the a
 
 ## How to add somebody to the spammers list?
 1. Open an issue with the dedicated issue template and fill the required fields
-2. Somebody will take a look at your issue and will push it or not to the repo's blacklist
+2. Somebody will take a look at your issue and will push it or not to the repo's spammers list
 
 ## The philosophy, why no PRs?
 Any issue doesn't open a PR. We only direct-push to the repo to not "cheat" over the Hacktoberfest event.
@@ -62,7 +62,7 @@ Various inputs are defined in [`action.yml`](action.yml) to let you configure Sp
 | `action-type` | The action to be taken in case of a positive test. Possible values are `flag` (adds a "Spam" label to the PR) and `close` (adds a "Spam" label to the PR and closes it). | `flag`
 
 ## Contributing
-You want to make the script even faster, the model more sexy? Any **real** contribution to the repo (**not** on the blacklist) should be made with a PR as you would do for a standard GitHub project. More info on the [CONTRIBUTING.md](CONTRIBUTING.md) file. 😉
+You want to make the script even faster, the model more sexy? Any **real** contribution to the repo (**not** on the spammers list) should be made with a PR as you would do for a standard GitHub project. More info on the [CONTRIBUTING.md](CONTRIBUTING.md) file. 😉
 
 #### `npm run start:dev`
 Starts the application in development using `nodemon` and `ts-node` to do hot reloading.

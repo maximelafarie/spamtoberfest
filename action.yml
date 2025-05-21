@@ -4,17 +4,16 @@ author: 'Maxime Lafarie'
 branding:
   icon: 'user-x'
   color: 'gray-dark'
-categories: ['Spam', 'Hacktoberfest', 'PR checker', 'checker', 'Pull request']
-
-on: [pull_request]
 
 inputs:
   action-type:
-    description: 'Type of action to do if spammer is in the blacklist. Possible values: flag | close'
+    description: 'Type of action to do if spammer is in the spammers list. Possible values: flag | close'
+    required: false
     default: 'flag'
   repo-token:
     description: 'The GITHUB_TOKEN secret'
+    required: true
 
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: node20
+  main: dist/index.js
