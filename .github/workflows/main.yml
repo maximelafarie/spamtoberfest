@@ -24,7 +24,7 @@ jobs:
       - name: Spamtoberfest
         uses: maximelafarie/spamtoberfest@main
         with:
-          # Type of action to do if spammer is in the blacklist. Possible values: flag | close
+          # Type of action to do if spammer is in the spammers list. Possible values: flag | close
           action-type: close # default is flag
           # The GITHUB_TOKEN secret
           repo-token: ${{ secrets.GITHUB_TOKEN }}
